@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tus Preferencias</title>
+</head>
+
+<style>
+    body {
+        border-radius: 50%;
+        background-image: url(https://i.pinimg.com/originals/b7/a5/16/b7a516da058ebab488b77d319c12eb39.jpg);
+        background-size: cover;
+        background-attachment: scroll;
+        text-align: justify;
+        background-repeat: no-repeat;
+        color: cornsilk;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    h1{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: darkgrey;
+        font-size: 6rem;
+        letter-spacing: 2rem;
+        text-align: center;
+        text-shadow: 1rem 1rem white;
+    }
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 2rem;
+        letter-spacing: 0.4rem;
+    }
+   
+    footer{
+        background-color:black; 
+        font-family: Arial, Helvetica, sans-serif; 
+        text-align: center;
+        color: white;
+        font-size: 1rem;
+    }
+</style>
+<body>
+
+    <h1><i>PREFERENCIAS</i></h1>
+        <h2>Cuéntanos cuáles son tus álbunes y temas favoritos!</h2>
+        <h2>Y envíanos tus inquietudes!</h2>
+
+        <form action="datos.html" target="_blank">
+
+            <div>
+            <fieldset>
+                <legend>Información Personal</legend>
+                <p>
+                    <label>
+                        Ingresa tu nombre completo:
+                        <input text="text" name="nombrecompleto" placeholder="Nombre Completo" size="20" maxlength="20"
+                            required />
+                    </label>
+                <p>
+                <p>
+                    <label>
+                        Edad:
+                        <select name="edad">
+                            <option>Menos de 20</option>
+                            <option>Entre 20 y 40</option>
+                            <option>Mas de 40</option>
+                        </select>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Género:
+                        <select name="genero">
+                            <option>Masculino</option>
+                            <option>Femenino</option>
+                        </select>
+                    </label>
+                </p>
+                <label>
+                    Nacionalidad: <br />
+                    <select multiple name="pais">
+                        <option value="argentina">Argentina</option>
+                        <option value="españa">España</option>
+                        <option value="mexico">Mexico</option>
+                        <option value="chile">Chile</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="italia">Italia</option>
+                        <option value="rusia">Rusia</option>
+                    </select>
+                </label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferencias</legend>
+                <p>
+                    <label>
+                        ¿Cuál es tu álbum favorito?:<br>
+                        <input type="radio" name="album" />"Valiente" (2018)<br />
+                        <input type="radio" name="album" />"Latina" (2016)<br />
+                        <input type="radio" name="album" />"Amore Mío" (2014)<br />
+                        <input type="radio" name="album" />"Habítame siempre" (2012)<br />
+                        <input type="radio" name="album" />"Lunada" (2008)<br />
+                        <input type="radio" name="album" />"El sexto sentido" (2005)<br />
+                        <input type="radio" name="album" />"Thalía" (2003)<br />
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        ¿Cuál es tu canción favorito?:<br />
+                        <input type="checkbox" name="canciones" />"No me acuerdo" (Valiente-2018)<br />
+                        <input type="checkbox" name="album" />"Estoy soltera" (2020)<br />
+                        <input type="checkbox" name="album" />"Lindo pero bruto" (Valiente-2020)<br />
+                        <input type="checkbox" name="album" />"Estoy enamorado" (Primera Fila-2012)<br />
+                        <input type="checkbox" name="album" />"Tímida" (2020)<br />
+                        <input type="checkbox" name="album" />"Que ironía" (Valiente-2018)<br />
+                        <input type="checkbox" name="album" />"Ya tú me conoces" (2020)<br />
+                        <input type="checkbox" name="album" />"Qué será de ti" (Primera Fila-2009)<br />
+                        <input type="checkbox" name="album" />"Lento" (2018)<br />
+                    </label>
+                </p>
+            </fieldset>
+        
+        <div>
+            <p>
+                <label>
+                    Déjanos un mensaje:<br>
+                    <textarea name="mensaje"></textarea><br>
+                </label>
+            </p>
+            <p><input type="reset" value="Reiniciar el formulario" /></p><br>
+            <p><input type="submit" value="Enviar formulario" /></p>
+        </div>
+
+        </form>
+    </div>
+    <div>
+        <footer>
+        <p><br>Copyright 2021   SONY MUSIC ENTERTAINMENT</p>
+        <p>TERMINOS & CONDICIONES | POLITICA DE PRIVACIDAD | LEY DE PRIVACIDAD DEL CONSUMIDOR<br><br></p>
+    </footer>
+  </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://image.freepik.com/vector-gratis/fondo-malla-degradado-colorido-suave-borroso_56745-147.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed; 
+     text-align: justify;
+     font-family: Arial, Helvetica, sans-serif;
+     position: relative
+}
+nav{
+    text-align: justify;
+    background-color: none;
+}
+
+.bio{
+    background-color: rgb(164, 179, 31); 
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    width: 80em;
+    height: 21em;
+    padding: 2em;
+    margin: 3em;
+    border: black 0.2em;
+}/*ya esta responsivo*/
+
+span{
+    font-size: 1.5rem;
+    font-style: oblique;
+}/*ya esta responsivo*/
+
+.curios{
+    background-color: rgb(140, 128, 241); 
+    color: white;
+    font-size: 1rem;
+    width: 80em;
+    height: 28em;
+    padding: 2em;
+    margin: 3em;
+    border: black 0.2em;
+    } /*ya esta responsivo*/
+
+.tit{
+    font-size: 6rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    color: thistle; 
+    background-color: black;
+    width: 100rem;
+    height: 9rem;
+    text-align: center;
+    letter-spacing: 2rem;
+    text-shadow: 1rem 1rem rgba(156, 152, 153, 0.822);
+}/*ya esta responsivo*/
+
+.letras{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    color: lightslategrey;
+}
+
+header{
+    font-size: 1rem;
+}
+.nav{
+    float: right;
+    
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(192, 180, 180);
+       
+  }
+.nav li{
+    display: inline-block;
+    line-height: 4em;
+     
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: o,50em 0,30em;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color: #111;
+  }
+
+  .tittabla{
+      font-size: 2rem;
+      line-height: 2rem;
+  }
+
+table{
+    
+    border: none;
+    font-size: 1rem;
+}
+th td{
+    border-bottom: lightseagreen solid 1em;
+    padding: 1em;
+  text-align: left;
+}
+tr:hover{
+    background-color: lightslategrey;
+}
+
+.imagen{
+    width: 85em;
+    overflow: hidden;
+    background: burlywood;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.imagen1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+            
+}
+.ranking{
+    float: left;
+    margin: 20px;
+}
+.music{
+    float: right;
+    margin: 20px;
+}
+footer{
+    background-color:black; 
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: center;
+    width: 100em;
+    height: 5em;
+    color: white;
+    font-size: 1rem;
+}
+/*para mobile*/
+@media only screen and (max-width:640px){
+.tit{
+    width: 60rem;
+    height: auto;
+}
+.nav{
+    float: left;
+    flex-direction: column;
+}
+.container{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+.bio{
+    width: 40em;
+    height: auto;
+    
+}
+.imagen{
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+.curios{
+    width: 40em;
+    height: auto;
+}
+.letras{
+    font-size: 1.5rem;
+}
+.imagen1{
+    width: 7em;
+    height: auto;
+}
+footer{
+    width: 60em;
+    height: auto;
+    font-size: 0,7rem;
+}
+
+}
+/*para tablet*/
+@media only screen and (min-width:641px) and (max-width:900px){
+
+}
+/*para escritorio*/
+@media only screen and (min-width:901px) and (max-width:1200px){
+
+}
