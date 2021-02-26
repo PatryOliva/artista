@@ -12,10 +12,6 @@ body{
      font-family: Arial, Helvetica, sans-serif;
      position: relative
 }
-nav{
-    text-align: justify;
-    background-color: none;
-}
 
 .bio{
     background-color: rgb(164, 179, 31); 
@@ -50,8 +46,8 @@ span{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
     color: thistle; 
     background-color: black;
-    width: 100rem;
-    height: 9rem;
+    width: 14,5em;
+    height: 8rem;
     text-align: center;
     letter-spacing: 2rem;
     text-shadow: 1rem 1rem rgba(156, 152, 153, 0.822);
@@ -62,96 +58,153 @@ span{
     font-size: 3rem;
     letter-spacing: 0.5rem;
     color: lightslategrey;
+    border-style: none none solid none;
 }
 
 header{
     font-size: 1rem;
 }
 .nav{
+    display: flex;
+    position: fixed;
     float: right;
-    
+    left: 950px;
+    align-content: space-around;
+    padding: 0px 10px 0px 10px;
+         
 }
-ul{
+.nav ul{
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
-  background-color: rgb(192, 180, 180);
-       
+  background-color: rgba(179, 165, 165, 0.664);
+  padding: 0px 10px 0px 10px;
+         
   }
 .nav li{
     display: inline-block;
-    line-height: 4em;
-     
+    line-height: 3em;
+    float: right;
+       
+             
 }
-li a {
+.nav li a {
     display: block;
     color: white;
     text-align: center;
-    padding: o,50em 0,30em;
+    padding: 7px;
     text-decoration: none;
+    font-size: 1,6rem;
+           
   }
   li a:hover {
     background-color: #111;
   }
 
-  .tittabla{
+.tittabla{
       font-size: 2rem;
       line-height: 2rem;
+      background-color: black;
+      color: white;
+  }
+  .estiltablas{
+      background-color: rgb(99, 97, 97);
   }
 
 table{
-    
     border: none;
     font-size: 1rem;
+    text-align: justify;
 }
 th td{
     border-bottom: lightseagreen solid 1em;
     padding: 1em;
-  text-align: left;
+    text-align: center;
 }
 tr:hover{
     background-color: lightslategrey;
 }
 
 .imagen{
-    width: 85em;
+    width:80em;
+    padding: 2em 1em 2em 1em;
+    margin: 0em 1em 0em 1em;
     overflow: hidden;
-    background: burlywood;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-}
-.imagen1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2em;
+    align-items: center;
+    background-color: rgba(24, 20, 19, 0.836);
+   }
 
-.container{
-    width: 1200px;
+.imagen .foto{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    }
     
-            
+.container{
+    width: 14,5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-around;
+    padding: 60px 10px 30px 10px;
+    margin-top: 40px;
+               
 }
 .ranking{
-    float: left;
-    margin: 20px;
+    display: block;
+    flex-direction: column;
 }
+.enlaces{
+text-align: left;
+background-color: none;
+margin-top: 10px;
+}
+.enlaces li a:hover {
+    background-color: rgba(189, 167, 167, 0.836);
+  }
+
+.enlaces li a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    word-spacing: 8px;
+    padding: 8px;
+    letter-spacing: 0,8rem;
+}
+
+.enlaces ul li{
+    display: block;
+    flex-direction: column;
+    position: sticky;
+    padding: 10px;
+    text-align: left;
+    background-color: none;
+    text-decoration: none;
+    word-spacing: 8px;
+    padding: 8px;
+    letter-spacing: 0,8rem;
+}
+
 .music{
-    float: right;
+    display: block;
     margin: 20px;
+    flex-direction: column;
+    justify-content: center;
+        
 }
 footer{
     background-color:black; 
     font-family: Arial, Helvetica, sans-serif; 
     text-align: center;
-    width: 100em;
+    width: 14,5em;
     height: 5em;
     color: white;
     font-size: 1rem;
+    margin-top: 1em;
 }
 /*para mobile*/
 @media only screen and (max-width:640px){
@@ -160,8 +213,17 @@ footer{
     height: auto;
 }
 .nav{
+    display: block;
     float: left;
     flex-direction: column;
+    left: 10px;
+}
+.nav li a{
+    display: block;
+    flex-direction: column;
+    float: left;
+    line-height: 3em;
+                
 }
 .container{
     flex-direction: column;
@@ -202,9 +264,69 @@ footer{
 }
 /*para tablet*/
 @media only screen and (min-width:641px) and (max-width:900px){
+    .nav{
+        display: block;
+        float: left;
+        flex-direction: column;
+        left: 10px;
+    }
+    .bio{
+        width: 50em;
+        height: auto;
+        padding: 1em;
+        margin: 0,7em;
+    }
+    .imagen{
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        padding: 1em;
+        margin: 0,5em;
+    }
+    .curios{
+        width: 50em;
+        height: auto;
+        padding: 1em;
+        margin: 0,7em;
+    }
+    .container{
+        flex-direction: column;
+         flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+
+    }
 
 }
 /*para escritorio*/
 @media only screen and (min-width:901px) and (max-width:1200px){
+    .tit{
+        width: 70rem;
+        height: auto;
+    }
+    .nav{
+        display: block;
+        float: left;
+        left: 700px;
+    }
+    .bio{
+        width: 60em;
+        height: auto;
+        padding: 1em;
+        margin: 0,7em;
+    }
+    .curios{
+        width: 60em;
+        height: auto;
+        padding: 1em;
+        margin: 0,7em;
+    }
+    footer{
+        width: 70em;
+        height: auto;
+    }
 
 }

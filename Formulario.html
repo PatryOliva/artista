@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tus Preferencias</title>
+     <title>Tus Preferencias</title>
 </head>
 
 <style>
@@ -18,24 +18,39 @@
         background-repeat: no-repeat;
         color: cornsilk;
         font-family: Arial, Helvetica, sans-serif;
-
     }
-
     h1{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        color: darkgrey;
+        color: rebeccapurple;
         font-size: 6rem;
         letter-spacing: 2rem;
         text-align: center;
-        text-shadow: 1rem 1rem white;
+        border-style: none none solid none;
     }
     h2{
         font-family: Arial, Helvetica, sans-serif;
-        color: white;
+        color: rgb(115, 187, 187);
         font-size: 2rem;
         letter-spacing: 0.4rem;
     }
-   
+    .mensaje{
+        width: 25em;
+        height: 10em;
+    }
+    .button1{
+        background-color: darkslategrey;
+        color: gainsboro;
+        font-size: 1rem;
+        padding: 12px 28px;
+        border-radius: 8px;
+    }
+   .button2{
+       background-color: rebeccapurple;
+       color: gainsboro;
+       font-size: 1rem;
+       padding: 12px 28px;
+       border-radius: 8px;
+   }
     footer{
         background-color:black; 
         font-family: Arial, Helvetica, sans-serif; 
@@ -43,6 +58,33 @@
         color: white;
         font-size: 1rem;
     }
+    /*para mobile*/
+     @media only screen and (max-width:640px){
+    footer{
+         width: 60em;
+         height: auto;
+         font-size: 0,7rem;
+    }
+     }
+    /*para tablet*/
+     @media only screen and (min-width:641px) and (max-width:900px){
+    footer{
+        width: 70em;
+        height: auto;
+    }
+    }
+    /*para escritorio*/
+     @media only screen and (min-width:901px) and (max-width:1200px){
+         h1{
+             font-size: 5rem;
+             letter-spacing: 1.3rem;
+         }
+         h2{
+            font-size: 1,5rem;
+            letter-spacing: 0rem;
+         }
+     }
+
 </style>
 <body>
 
@@ -81,9 +123,8 @@
                             <option>Femenino</option>
                         </select>
                     </label>
-                </p>
                 <label>
-                    Nacionalidad: <br />
+                    Nacionalidad: <br/>
                     <select multiple name="pais">
                         <option value="argentina">Argentina</option>
                         <option value="españa">España</option>
@@ -131,11 +172,11 @@
             <p>
                 <label>
                     Déjanos un mensaje:<br>
-                    <textarea name="mensaje"></textarea><br>
+                    <textarea name="mensaje" class="mensaje"></textarea><br>
                 </label>
             </p>
-            <p><input type="reset" value="Reiniciar el formulario" /></p><br>
-            <p><input type="submit" value="Enviar formulario" /></p>
+            <p><input type="reset" value="Reiniciar el formulario" class="button1"></p><br>
+            <p><input type="submit" value="Enviar formulario" class="button2"></p>
         </div>
 
         </form>
